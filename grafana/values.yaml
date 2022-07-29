@@ -1,0 +1,11 @@
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: cluster-external
+
+  hosts:
+    - grafana.cluster.ichi-t.me
+
+grafana.ini:
+  server:
+    root_url: http://localhost:3000/
